@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lil laptop — moving to lillaptop.com</title>
+<link rel="canonical" href="https://lillaptop.com/">
+<script>
+const destination = new URL("https://lillaptop.com/");
+destination.pathname = window.location.pathname;
+destination.search = window.location.search;
+destination.hash = window.location.hash;
+document.querySelector("link[rel=canonical]").href = destination.href;
+window.location.replace(destination.href);
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://lillaptop.com/"></noscript>
+</head>
+<body><p>Visit <a href="https://lillaptop.com/">lillaptop.com</a>.</p></body>
+</html>
